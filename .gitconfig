@@ -1,0 +1,39 @@
+[core]
+  editor = nvim
+  pager = delta
+[color]
+  ui = auto
+[interactive]
+  diffFilter = delta --color-only
+[init]
+  defaultBranch = main
+[alias]
+  cm = commit
+  co = checkout
+  pl = pull
+  ps = push
+  ss = stash
+  st = status
+[fetch]
+  prune = true
+[merge]
+  autostash = true
+  conflictstyle = diff3
+[rebase]
+  autostash = true
+  autosquash = true
+[push]
+  default = current
+[pull]
+  rebase = true
+[diff]
+  colorMoved = default
+[delta]
+  navigate = true
+[ghq]
+  root = ~/repos
+[include]
+  path = ~/.gitconfig.local
+
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
